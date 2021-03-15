@@ -16,26 +16,85 @@
 
 </head> 
 <body>
+<div  class="bg-image"
+style="background-image: url('https://www.electronicproducts.com/wp-content/uploads/computer-peripheral-systems-in-flight-entertainment.jpg');
+      height: 100vh">
 <div class="container text-cenetr py-5">
 <form action="{{url('seatselected')}}" method="post" class="form">
 
 @csrf
-     Flight id:<input type="text" value="{{$values['fid']}}" name="flid"><br><br> 
-    Flight Name:<input type="text" value="{{$values->airlinename}}" name="fname"><br><br>
-    Departure:<input type="text" value="{{$values->departure}}" name="departure"><br><br>
-    Arrival:<input type="text" value="{{$values->arrival}}" name="arrival"><br><br>
-    Date:<input type="text" value="{{$values->date}}" name="date"><br><br>
-    Departure time:<input type="text" value="{{$values->dtime}}" name="dtime"><br><br>
-    Arrival Time:<input type="text" value="{{$values->atime}}" name="atime"><br><br>
-    No of seats available:<input type="text" value="{{$values->seat}}" name="seats"><br><br>
-    No of business seats available:<input type="text" value="{{$values->bussiness}}" name="bseats"><br><br>
-    No of economy seats available:<input type="text" value="{{$values->economy}}" name="eseats"><br><br>
-    No of  first class seats available:<input type="text" value="{{$values->first}}" name="fseats"><br><br>
-    Cost of business class:<input type="text" value="{{$values->bcost}}" name="bcostss"><br><br>
-    Cost of economic class:<input type="text" value="{{$values->ecost}}" name="ecostss"><br><br>
-    Cost of first class:<input type="text" value="{{$values->fcost}}" name="fseatss"><br><br>
+<table class="bg-white">
+<tr>
+<td>
+     Flight id:</td>
+     <td><input type="text" value="{{$values['fid']}}" name="flid"></td>
+</tr>
+<tr>
+<td>
+    Flight Name:</td>
+    <td><input type="text" value="{{$values->airlinename}}" name="fname"></td>
+</tr>
+<tr>
+<td>
+    Departure:</td>
+    <td><input type="text" value="{{$values->departure}}" name="departure"></td>
+   </tr>
+   <tr>
+   <td>
+    Arrival:</td>
+    <td><input type="text" value="{{$values->arrival}}" name="arrival"></td>
+    </tr>
+    <tr>
+    <td>
+    Date:</td>
+    <td><input type="text" value="{{$values->date}}" name="date"></td>
+   <tr>
+   <td>
+    Departure time:</td>
+    <td><input type="text" value="{{$values->dtime}}" name="dtime"></td>
+  </tr>
+  <tr>
+  <td>
+    Arrival Time:</td>
+    <td><input type="text" value="{{$values->atime}}" name="atime"></td>
+   </tr>
+   <td>
+    No of seats available:</td>
+    <td><input type="text" value="{{$values->seat}}" name="seats"></td>
+    </tr>
+    <tr>
+    <td>
+    No of business seats available:</td>
+    <td><input type="text" value="{{$values->bussiness}}" name="bseats"></td>
+    </tr>
+    <tr>
+    <td>
+    No of economy seats available:</td>
+    <td><input type="text" value="{{$values->economy}}" name="eseats"></td>
+    </tr>
+    <tr>
+    <td>
+    No of  first class seats available:</td>
+    <td><input type="text" value="{{$values->first}}" name="fseats"></td>
+   </tr>
+   <tr>
+   <td>
+    Cost of business class:</td>
+    <td><input type="text" value="{{$values->bcost}}" name="bcostss"></td>
+    </tr>
+    <tr>
+    <td>
+    Cost of economic class:</td>
+    <td><input type="text" value="{{$values->ecost}}" name="ecostss"></td>
+    </tr>
+    <tr>
+    <td>
+    Cost of first class:</td>
+    <td><input type="text" value="{{$values->fcost}}" name="fseatss"></td>
+    </tr>
+    </table>
     
-
+<div class="bg-primary">
     Select your seat:
     @if ($values->bussiness==0 and $values->economy==0 and $values->first==0)
         <p>no seats are available</p>
@@ -84,10 +143,10 @@
 @endif
 <br><br>
 <input type="submit" name="submit" value="Book Now">
-
+</div>
 </form>
 </div>
- <a href="">Back</a>
-    
+<a href="userhomepage">Home page</a>
+ </div>   
 </body>
 </html>

@@ -1,22 +1,3 @@
-
-
-Skip to content
-Using Gmail with screen readers
-Meet
-New meeting
-Join a meeting
-Hangouts
-
-
-Unsubscribe from Team YourStory?
-You haven't opened any emails from this sender in the last month
-UnsubscribeNo, thanks
-Conversations
-2.73 GB of 15 GB used
-Terms · Privacy · Programme Policies
-Last account activity: 13 hours ago
-Details
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -230,5 +211,3 @@ text-decoration:underline;
 </body>
 </html>
 
-addflight.blade.php
-Displaying addflight.blade.php.
